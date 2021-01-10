@@ -1,9 +1,6 @@
 import cv2
 import numpy as np
 
-events = [i for i in dir(cv2) if 'EVENT' in i]
-print(events)
-
 def click_event(event, x, y, flags, param):
     if event == cv2.EVENT_LBUTTONDOWN:
         print(x, ', ', y)
