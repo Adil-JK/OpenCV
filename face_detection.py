@@ -19,9 +19,9 @@ while vid.isOpened():
         #frame = cv2.putText(frame, 'Muhammad Adil', (x, y+h+25), font, 0.8, (0, 255, 0), 2, cv2.LINE_AA)
         text = "Face detected"
         language = "en"
-        myobj = gTTS(text=text, lang=language, slow=False)
-        myobj.save("welcome.mp3")
-        os.system("welcome.mp3")
+        speech = gTTS(text=text, lang=language, slow=False)
+        speech.save("face_detected.mp3")
+        os.system("face_detected.mp3")
 
         # Display the output
     cv2.imshow('Video', frame)
